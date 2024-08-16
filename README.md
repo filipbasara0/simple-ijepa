@@ -38,7 +38,7 @@ To setup the code, clone the repository, optionally create a venv and install re
 
 ### Examples
 
-`STL10` model was trained with this command:
+`STL-10` model was trained with this command:
 
 `python run_training.py --fp16_precision --log_every_n_steps 200 --num_epochs 100 --batch_size 256`
 
@@ -73,7 +73,7 @@ options:
   --update_gamma_every_n_steps UPDATE_GAMMA_EVERY_N_STEPS
                         Update EMA gamma after this many steps
   --ckpt_path CKPT_PATH
-                        Specify path to scl_model.pth to resume training
+                        Specify path to ijepa_model.pth to resume training
 ```
 
 ## Citation

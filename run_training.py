@@ -1,8 +1,9 @@
 import argparse
 
-from train import train_ada_mim
+from train import train_ijepa
 
-parser = argparse.ArgumentParser(description='Sigmoid Contrastive Learning')
+
+parser = argparse.ArgumentParser(description='I-JEPA')
 parser.add_argument('--dataset_path',
                     default='./data',
                     help='Path where datasets will be saved')
@@ -51,12 +52,12 @@ parser.add_argument('--update_gamma_every_n_steps',
 parser.add_argument('--ckpt_path',
                     default=None,
                     type=str,
-                    help='Specify path to scl_model.pth to resume training')
+                    help='Specify path to training_model.pth to resume training')
 
 
 def main():
     args = parser.parse_args()
-    train_ada_mim(args)
+    train_ijepa(args)
 
 
 if __name__ == "__main__":

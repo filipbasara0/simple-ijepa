@@ -25,8 +25,7 @@ setup(
         'machine learning',
         'pytorch',
         'self-supervised learning',
-        'representation learning',
-        'contrastive learning'
+        'representation learning'
     ],
     install_requires=[
         'torch>=2.1',
@@ -44,7 +43,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "ijepa_train = run_training:main"
+            "train_ijepa = run_training:main"
         ],
     },
 )
